@@ -1,0 +1,84 @@
+.dropDown {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    border-top: 1px solid #F6F8FA;
+}
+
+.details {
+    position: relative;
+    display: flex;
+    transition: 0.3s;
+    overflow: hidden;
+    padding: 24px 0;
+    border-top: 1px solid #ECEFF2;
+    border-bottom: 1px solid #ECEFF2;
+}
+
+.details::after {
+    z-index: 12;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    content: "";
+    background-image: url("../../assets/openDropDown.svg");
+    display: block;
+    width: 24px;
+    height: 24px;
+    transform-origin: center;
+    transition: .3s;
+}
+
+.details[open]::after {
+    transform: rotate(45deg);
+}
+
+.details__title {
+    z-index: 10;
+    position: relative;
+    font-size: 18px;
+    line-height: 32px;
+    cursor: pointer;
+    list-style: none;
+    font-weight: 600;
+    transition: .3s;
+    max-width: 936px;
+    width: 90%;
+    margin-right: 48px;
+}
+
+.details__title:hover {
+    color: #2A6CEA;
+}
+
+.details__content {
+    z-index: 0;
+    color: #5E646A;
+    position: relative;
+    padding-top: 24px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    transition: .3s;
+    max-width: 936px;
+}
+
+@media screen and (max-width: 768px) {
+    .details__title {
+        margin-right: 28px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .details {
+        padding: 16px 0;
+    }
+    .details__title {
+        margin-right: 20px;
+    }
+    .details__content {
+        padding-top: 16px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+}

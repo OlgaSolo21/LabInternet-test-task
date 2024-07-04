@@ -1,0 +1,33 @@
+.feedback {
+    display: flex;
+    background-color: #F6F8FA;
+    flex-direction: column;
+    padding: 57px 341px 90px;
+}
+
+.feedback__title {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+@media screen and (max-width: 1660px) {
+    .feedback {
+        padding: 40px 30px 90px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .feedback {
+        padding: 33px 21px 45px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .feedback {
+        padding: 27px 16px 37px;
+    }
+    .feedback__title {
+        padding-bottom: 26px;
+    }
+}

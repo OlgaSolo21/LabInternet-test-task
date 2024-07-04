@@ -1,0 +1,35 @@
+.faq {
+    margin: 80px 456px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1750px) {
+    .faq {
+        margin: 80px 256px;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .faq {
+        margin: 80px 126px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .faq {
+        margin: 50px 36px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .faq {
+        margin: 56px 21px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .faq {
+        margin: 56px 16px;
+    }
+}

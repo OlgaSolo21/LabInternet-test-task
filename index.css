@@ -1,0 +1,18 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts.css);
+
+@import url(./utils/interface.css);
+
+@import url(./src/components/Header/Header.css);
+@import url(./src/components/Head/Head.css);
+@import url(./src/components/About/About.css);
+@import url(./src/components/Cost/Cost.css);
+@import url(./src/components/Feedback/Feedback.css);
+@import url(./src/components/Carousel/Carousel.css);
+@import url(./src/components/FAQ/Faq.css);
+@import url(./src/components/DropDown/DropDown.css);
+@import url(./src/components/InfoService/InfoService.css);
+@import url(./src/components/OrderForm/OrderForm.css);
+@import url(./src/components/Footer/Footer.css);
+
+@import url(./src/components/BurgerMenuPopup/BurgerMenuPopup.css);

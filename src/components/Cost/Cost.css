@@ -1,0 +1,155 @@
+.cost {
+    margin: 80px 352px;
+    display: flex;
+    gap: 32px;
+    position: relative;
+}
+
+.cost__info {
+    display: flex;
+    flex-direction: column;
+    max-width: 592px;
+    margin: 125px 0;
+}
+
+.cost__title {
+    margin: 0;
+    padding-bottom: 18px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.cost__description {
+    margin: 0;
+    color: #5E646A;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    padding-bottom: 28px;
+}
+
+.cost__description:last-of-type {
+    padding-bottom: 0;
+}
+
+.cost__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 1580px) {
+    .cost {
+        margin: 80px 52px;
+    }
+    .cost__img_prev {
+        width: 592px;
+        height: 448px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .cost {
+        margin: 50px 32px;
+        align-items: center;
+    }
+    .cost__img {
+        top: 150px;
+        width: 400px;
+        height: 320px;
+    }
+    .cost__img_prev {
+        width: 400px;
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cost {
+        margin: 56px 20px;
+        gap: 24px;
+    }
+    .cost__img {
+        top: 0;
+        width: 351px;
+        height: 265px;
+    }
+    .cost__img_prev {
+        width: 351px;
+        height: 265px;
+    }
+    .cost__info {
+        max-width: 352px;
+        margin: 15px 0;
+    }
+    .cost__title {
+        padding-bottom: 15px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .cost__description {
+        padding-bottom: 4px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .cost {
+        flex-direction: column-reverse;
+    }
+    .cost__img {
+        top: -20px;
+        right: 70px;
+        width: 251px;
+        height: 165px;
+    }
+    .cost__img_prev {
+        width: 251px;
+        height: 165px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cost {
+        margin: 56px 16px;
+        gap: 7px;
+    }
+    .cost__img {
+        top: 0;
+        right: 0;
+        width: 342px;
+        height: 258px;
+    }
+    .cost__img_prev {
+        width: 342px;
+        height: 258px;
+    }
+    .cost__info {
+        max-width: 342px;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cost {
+        gap: 27px;
+    }
+    .cost__img {
+        width: 288px;
+        height: 218px;
+    }
+    .cost__img_prev {
+        width: 288px;
+        height: 218px;
+    }
+    .cost__info {
+        max-width: 288px;
+    }
+    .cost__title {
+        padding-bottom: 27px;
+    }
+}
+
+
+
